@@ -1,0 +1,240 @@
+body{
+    background-color: hsl(185, 41%, 84%)
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+
+#titre{
+    color: hsl(186, 14%, 43%);
+}
+
+#canvasUtilisateur{
+    margin-top: 30px;
+    background-color: white;
+    width: 60%;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tipchoise{
+    text-align: center;
+    height: 150px;
+    width: 90%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+}
+.tipchoise input{
+  display: none;
+
+}
+
+.tipchoise input:checked + label{
+    background-color: hsl(184, 14%, 56%)
+}
+
+.tipchoise label{
+    margin-top: 5px;
+    display: block;
+    background-color: hsl(183, 100%, 15%);
+    width: 85px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+
+}
+
+#RightPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%;
+    height: 350px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#leftPart{
+    width: 40%;
+    height: 350px;
+   color: hsl(184, 14%, 56%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+#leftPart input{
+    margin-left: 10%;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#billInput{
+    display: flex;
+    flex-direction: row;
+     background-color:hsl(189, 41%, 97%);
+     border-radius: 5px;
+}
+
+#billInput input{
+   border: none;
+   text-align: end;
+   font-size: 20px;
+   background-color:hsl(189, 41%, 97%);
+   text-decoration: none;
+   outline: none;
+}
+
+#PeopleInput{
+    display: flex;
+    flex-direction: row;
+     background-color:hsl(189, 41%, 97%);
+     border-radius: 5px;
+}
+#PeopleInput input{
+    border: none;
+    text-align: end;
+    font-size: 20px;
+    background-color:hsl(189, 41%, 97%);
+    text-decoration: none;
+    outline: none;
+ }
+
+
+ .TipArea{
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     line-height: 1px;
+    
+ }
+
+ .TipArea .textdeTipArea{
+    line-height: 1px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: nowrap;
+     align-items: center;
+ }
+
+ #Tipbypeople{
+     font-size: 30px;
+ }
+
+
+ .TotalArea{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    line-height: 1px;
+   
+}
+
+.TotalArea .textdeTotalArea{
+   line-height: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#Totalbypeopel{
+    font-size: 30px;
+}
+
+
+#ResetButton{
+    width: 70%;
+    height: 40px;
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    font-size: 20px;
+}
+
+#ResetButton:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+
+@media screen and (min-width: 900px) and (max-width: 1260px)
+{
+
+
+   .tipchoise label{
+       width: 60px;
+       height: 40px;
+       font-size: 20px;
+   }
+}
+
+
+@media screen and (max-width: 900px)
+{
+
+
+    #canvasUtilisateur{
+        margin-top: 30px;
+        background-color: white;
+        width: 100%;
+        height: 800px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    #leftPart{
+        width: 70%;
+        height: 350px;
+       color: hsl(184, 14%, 56%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        margin-top: 1px;
+        margin-left: 10px;
+        border-radius: 20px;
+    }
+
+    .tipchoise label{
+        width: 60px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .tipchoise {
+        width: 90%;
+        min-width: 271px;
+        
+    }
+
+  #RightPart{
+    min-width: 271px;
+    margin-left: 0px;
+  }
+
+}

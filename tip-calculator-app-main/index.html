@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <h1 id="titre">SPLITTER</h1>
+  <div id="canvasUtilisateur">
+<div id="leftPart">
+  Bill <br>
+  <div id="billInput">
+  <div class="dollard"><img src="images/icon-dollar.svg" alt="dollardimage"></div>
+  <input type="text" value="" id="bill" placeholder="0">
+  </div>
+  <br>
+  Select Tip %
+  <div class="tipchoise">
+  <div>
+    <input type="radio" id="cinq" name="TIP" value="0.05" onclick=ChangeTip(this);
+           checked>
+    <label for="cinq" id="cinqLabel"> 5 % </label>
+  </div>
+  <div>
+    <input type="radio" id="dix" name="TIP" value="0.10" onclick=ChangeTip(this);> 
+    <label for="dix" id="dixLabel"> 10 % </label>
+
+  </div>
+
+  
+
+  <div>
+    <input type="radio" id="quinze" name="TIP" value="0.15" onclick=ChangeTip(this);>
+    <label for="quinze" id="quinzeLabel">15 %</label>
+  </div><br>
+  <div>
+    <input type="radio" id="vingt_cinq" name="TIP" value="0.25" onclick=ChangeTip(this);>
+    <label for="vingt_cinq" id="vingt_cinqLabel">25 %</label>
+  </div>
+  <div>
+    <input type="radio" id="cinquante" name="TIP" value="0.50" onclick=ChangeTip(this);>
+    <label for="cinquante" id="cinquanteLabel">50 %</label>
+  </div>
+  
+  </div>
+  Number of People  <br>
+  <div id="PeopleInput">
+    <div class="peoplelogo"><img src="images/icon-person.svg" alt="personimage"></div>
+    <input type="text" value="" id="person" placeholder="0">
+    </div>
+
+  </div>
+
+
+
+
+  <div id="RightPart">
+
+
+ <div class="TipArea">
+  <h3>Tip Amount</h3>
+ <div class="textdeTipArea"><h5>/ person </h5><div id="Tipbypeople"></div></div>
+ </div>
+<br><br><br>
+ <div class="TotalArea">
+  <h3>Total</h3>
+ <div class="textdeTotalArea"><h5>/ person </h5><div id="Totalbypeopel"></div></div>
+ </div>
+ 
+  <br><br>
+<input type="button" value="Reset" id="ResetButton" onclick=resetAll();>
+  
+  </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
